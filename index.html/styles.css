@@ -85,26 +85,40 @@ h2
 { text-align: center;
 }
 
-section,
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container {
+  background: #2381A9;
+  *zoom: 1;
+}
+.container section,
 aside {
-  margin: 1.8%;
+  border-radius: 0.2px;
 }
 
- section {
+section {
   background-color:  #2381A9;
   line-height:normal;
   float: left;
   width: 63.197026%;
+  padding: 10px;
   height:110%;
   position: relative;
-
+ 
 }
  aside {
   background-color:  #2381A9;
   float: right;
-  width: 29.3680297%;
+  width: 29.2680297%;
   height:110%;
   position: relative;
+
 
 }
 table {
@@ -157,6 +171,7 @@ align-content: center;
 
 img
 {align-content: center;}
+
 .button {
   background-color: grey;
   align-items: stretch;
@@ -187,13 +202,18 @@ img
 
 
 footer{
+  margin-top: 0%;
   font-family:'Montserrat';
-  text-align: center;
-  position: absolute fixed bottom;
+  clear:both;
+  position: relative;
   width: 100%;
+  text-align:center;
   background-color: #2381A9;
+}
 
-
+footer a
+{ text-decoration: cursive;
+color: white;
 }
 
 
