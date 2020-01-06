@@ -126,7 +126,6 @@ tr:nth-child(even) {
 }
 
 
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 10px;
@@ -154,9 +153,10 @@ input[type=submit]:hover {
 .iframe {
 align-content: center;
 
-
-
 }
+
+img
+{align-content: center;}
 .button {
   background-color: grey;
   align-items: stretch;
